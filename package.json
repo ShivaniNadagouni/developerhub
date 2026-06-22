@@ -1,0 +1,25 @@
+{
+  "name": "developerhub",
+  "version": "1.0.0",
+  "description": "developer hub application",
+  "license": "ISC",
+  "author": "Shivani",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start":"node server",
+    "server":"nodemon server",
+    "client":"npm run dev --prefix client",
+    "dev" :"concurrently \"npm run server\" \"npm run client\" "
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.7.0"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.3",
+    "nodemon": "^3.1.14"
+  }
+}
